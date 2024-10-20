@@ -47,6 +47,10 @@ h1 {
   transition: border-color 0.25s;
 }
 
+.btn-color {
+  color: #A62300;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
