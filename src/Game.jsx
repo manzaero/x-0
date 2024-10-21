@@ -21,7 +21,9 @@ export const Game = () => {
             newField[index] = currentPlayer;
 
             for (let i = 0; i < winnerSchema.length; i++) {
-                let [x, y, z] = winnerSchema[i];
+                let x = winnerSchema[i][0];
+                let y = winnerSchema[i][1];
+                let z = winnerSchema[i][2];
                 if (newField[x] && newField[x] === newField[y] && newField[x] === newField[z]) {
                     setIsGameEnded(true);
                     return newField
